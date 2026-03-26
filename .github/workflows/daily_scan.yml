@@ -15,10 +15,11 @@ jobs:
           python-version: '3.9'
       - run: pip install feedparser
       - run: python it_scanner.py
-      - name: Save Results
+      - name: Commit & Push changes
         run: |
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
-          git add news_archive.db index.html
-          git commit -m "Update Archive" || echo "No changes"
+          # ÄNDERUNG: Nutze -f (force), um die ignorierte DB trotzdem zu speichern
+          git add -f news_archive.db index.html
+          git commit -m "Update News Archive" || echo "No changes to commit"
           git push
