@@ -1,0 +1,6 @@
+news_archive.db
+index.html
+scanner.log
+.venv/
+__pycache__/
+it_news/
