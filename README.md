@@ -1,23 +1,33 @@
-# 🚀 IT & KI News-Scanner (Cloud Edition)
+# 🚀 IT & AI News Scanner (Cloud Edition)
 
-Ein automatisierter News-Aggregator für Fachinformatiker (FIAE), der gezielt IT-Fachportale und das Internet nach relevanten Themen wie Ausbildung, KI-Trends und Programmierung durchsucht.
+An automated news aggregator designed for Software Developers (FIAE) and IT professionals. It specifically scans IT news portals and the web for relevant topics such as vocational training, AI trends, and programming.
 
 ## 🌟 Features
-- **Multi-Source Scanning:** Durchsucht Heise, Golem, The Decoder und t3n via RSS.
-- **Global Search:** Nutzt Google News RSS-Parameter für eine webweite Suche.
-- **Smart Filtering:** Filtert Artikel nach Keywords (KI, FIAE, Python, IHK etc.).
-- **Persistence:** Speichert alle Funde in einer lokalen SQLite-Datenbank (`news_archive.db`).
-- **Cloud Automation:** Vollautomatische Ausführung via **GitHub Actions** (jeden Morgen um 08:00 Uhr).
-- **Live Dashboard:** Generiert automatisch eine `index.html`, die über **GitHub Pages** erreichbar ist.
+- **Multi-Source Scanning:** Scans Heise, Golem, The Decoder, and t3n via RSS feeds.
+- **Global Search:** Utilizes Google News RSS parameters for web-wide topic tracking.
+- **Smart Filtering:** Automatically filters articles by keywords (AI, FIAE, Python, IHK, etc.).
+- **Data Persistence:** Stores all findings in a local SQLite database (`news_archive.db`).
+- **Cloud Automation:** Fully automated execution via **GitHub Actions** (runs every morning at 08:00 UTC).
+- **Live Dashboard:** Automatically generates an `index.html` accessible via **GitHub Pages**.
 
-## 🛠️ Technologie-Stack
-- **Sprache:** Python 3.9+
-- **Bibliotheken:** `feedparser` (RSS-Parsing), `sqlite3` (Datenbank), `urllib` (URL-Encoding).
-- **Automatisierung:** GitHub Actions (YAML-Workflows).
-- **Frontend:** HTML5 / CSS3 (Responsives Dashboard).
+## 🛠️ Technology Stack
+- **Language:** Python 3.9+
+- **Libraries:** `feedparser` (RSS parsing), `sqlite3` (Database), `urllib` (URL encoding).
+- **Automation:** GitHub Actions (YAML workflows).
+- **Frontend:** HTML5 / CSS3 (Responsive Dashboard).
 
-## 🚀 Installation (Lokal)
-1. Repository klonen:
+## 🚀 Installation (Local)
+1. Clone the repository:
    ```bash
    git clone https://github.com
    cd it-news-scanner
+Verwende Code mit Vorsicht.
+
+Install dependencies:
+bash
+pip install feedparser
+Verwende Code mit Vorsicht.
+
+Run the scanner:
+bash
+python it_scanner.py
