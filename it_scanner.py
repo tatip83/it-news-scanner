@@ -93,7 +93,7 @@ def run_scanner():
     logging.info(f"Scan abgeschlossen. {new_count} neue Artikel hinzugefügt.")
     
     # Datei automatisch im Browser öffnen
-    webbrowser.open(f"file://{os.path.abspath(html_datei)}")
+   # webbrowser.open(f"file://{os.path.abspath(html_datei)}")
 
 if __name__ == "__main__":
     run_scanner()
